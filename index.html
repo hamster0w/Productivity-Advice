@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <a href="planner.html">Planner</a>
+  <h1>Productivity Advice</h1>
+  
+  <div class="question">
+        <h3 id = "q1" >How often do you procrastinate?</h3><img src="https://thumbs.gfycat.com/AdvancedWelloffCusimanse-size_restricted.gif" style=float:inline-end:200px;wdith:100px;height:100px;">
+        <div class="answer-choice">
+          <button type = "button" id="q1a1" onclick = "makeVisible('home1')">Every day </button>
+        </div>
+        <div class="answer-choice">
+          <br>
+          <button id="q1a2" onclick = "disappear('home1')">Never</button>
+        </div>
+        <p class ="home1" id = "home1">Procrastination is an issue but you can get through it. Click <a href = https://www.collegedata.com/resources/campus-life/8-tips-to-avoid-procrastination> here </a> for some tips from some experts.</p>
+
+        <h3 id = "q2" >Do you get distracted easily?</h3><img src="https://media.tenor.com/LiD1bGjpY14AAAAd/dog-chasing-your-tail.gif" style=float:inline-end:200px;wdith:100px;height:100px;">
+        <div class="answer-choice">
+          <button type = "button" id="q2a1" onclick = "makeVisible('home2')">Yes</button>
+        </div>
+        <div class="answer-choice">
+          <br>
+          <button id="q2a2" onclick = "disappear('home2')">No</button>
+        </div>
+        <p class ="home1" id = "home2"> Distractions are ok just make sure you get your work done :) </p>
+
+        <h3 id = "q3" >How often do you take long breaks?</h3><img src="https://media3.giphy.com/media/RiWZUGcZPEKdQgrQ96/giphy.gif" style=float:inline-end:200px;wdith:100px;height:100px;">
+        <div class="answer-choice">
+          <button type = "button" id="q3a1" onclick = "makeVisible('home3')">Very often</button>
+        </div>
+        <div class="answer-choice">
+          <br>
+          <button id="q3a2" onclick = "disappear('home3')">Not often</button>
+        </div>
+        <p class ="home1" id = "home3"> </p>
+
+        <h3 id = "q4" >Do you have trouble getting started on your work?</h3><img src="https://media.tenor.com/nXNHCwBK_M4AAAAM/lazy-cat.gif" style=float:inline-end:200px;wdith:100px;height:100px;">
+        <div class="answer-choice">
+          <button type = "button" id="q4a1" onclick = "makeVisible('home4')">Yes</button>
+        </div>
+        <div class="answer-choice">
+          <br>
+          <button id="q4a2" onclick = "disappear('home4')">No</button>
+        </div>
+        <p class ="home1" id = "home4"> Click here to get some help</p>
+
+        <h3 id = "q5" >How much do you sleep every night?</h3><img src="https://media.tenor.com/A0yyObBnWuoAAAAM/cat-snore.gif" style=float:inline-end:200px;wdith:100px;height:100px;">
+        <div class="answer-choice">
+          <button type = "button" id="q5a1" onclick = "makeVisible('home5')">less than 6</button>
+        </div>
+        <div class="answer-choice">
+          <br>
+          <button id="q5a2" onclick = "disappear('home5')">More than 6</button>
+        </div>
+        <p class ="home1" id = "home5"> Sleep is important, click here for some advice </p>
+      </div>
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
