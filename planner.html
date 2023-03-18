@@ -1,0 +1,338 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="index.html"> Main page </a>
+    <script src="script.js"></script>
+    <h1>We'll help you plan out your working schedule.</h1>
+    <h3>How many days do you want to work each week?  </h3>
+      <input type="checkbox" id="days1" name="days" value="Sunday">
+      <label for="days1"> Sunday</label><br>
+      <input type="checkbox" id="days2" name="days" value="Monday">
+      <label for="days2"> Monday</label><br>
+      <input type="checkbox" id="days3" name="days" value="Tuesday">
+      <label for="days3"> Tuesday</label><br>
+      <input type="checkbox" id="days4" name="days" value="Wednesday">
+      <label for="days4"> Wednesday</label><br>
+      <input type="checkbox" id="days5" name="days" value="Thursday">
+      <label for="days5"> Thursday</label><br>
+      <input type="checkbox" id="days6" name="days" value="Friday">
+      <label for="days6"> Friday</label><br>
+      <input type="checkbox" id="days7" name="days" value="Saturday">
+      <label for="days7"> Saturday</label><br>
+    <button onclick="finalplan()"> Make Your Plan!</button>
+    
+     <h3>What time do you wake up?</h3>
+      <label for="wake">Select:</label>
+      <select name="wake" id="wake">
+      <option value="5">5 A.M</option>
+      <option value="6">6 A.M</option>
+      <option value="7">7 A.M</option>
+      <option value="8">8 A.M</option>
+    </select>
+
+    <h3>How long does it take you to get ready and commute to your occupation?</h3>
+      <label for="commute1">Select:</label>
+      <select name="commute1" id="commute1">
+      <option value="1">1 hour</option>
+      <option value="2">2 hours</option>
+      <option value="3">3 hours</option>
+      <option value="4">4 hours</option>
+    </select>
+    
+    <h3>How long does your occupation take?</h3>
+      <label for="work">Select:</label>
+      <select name="work" id="work">
+      <option value="1">1 hour</option>
+      <option value="2">2 hours</option>
+      <option value="3">3 hours</option>
+      <option value="4">4 hours</option>
+      <option value="5">5 hours</option>
+      <option value="6">6 hours</option>
+      <option value="7">7 hours</option>
+      <option value="8">8 hours</option>
+      <option value="9">9 hours</option>
+      <option value="10">10 hours</option>
+      <option value="11">11 hours</option>
+      <option value="12">12 hours</option>
+      <option value="13">13 hours</option>
+      <option value="14">14 hours</option>
+      <option value="15">15 hours</option>
+      <option value="16">16 hours</option>
+    </select>
+    <h3>How long does it take to get home?</h3>
+      <label for="commute2">Select:</label>
+      <select name="commute2" id="commute2">
+      <option value="1">1 hour</option>
+      <option value="2">2 hours</option>
+      <option value="3">3 hours</option>
+      <option value="4">4 hours</option>
+    </select>
+
+    <h3>How much time do you want to spend on your work at home?</h3>
+      <label for="rWork">Select:</label>
+      <select name="rWork" id="rWork">
+      <option value="1">1 hour</option>
+      <option value="2">2 hours</option>
+      <option value="3">3 hours</option>
+      <option value="4">4 hours</option>
+      <option value="5">5 hours</option>
+      <option value="6">6 hours</option>
+      <option value="7">7 hours</option>
+      <option value="8">8 hours</option>
+      <option value="9">9 hours</option>
+      <option value="10">10 hours</option>
+      <option value="11">11 hours</option>
+      <option value="12">12 hours</option>
+      <option value="0">Whatever is left over</option>>
+    </select>
+    
+    <h3>How much free time do you want?</h3>
+      <label for="hours">Select:</label>
+      <select name="hours" id="hours">
+      <option value="1">1 hour</option>
+      <option value="2">2 hours</option>
+      <option value="3">3 hours</option>
+      <option value="4">4 hours</option>
+      <option value="5">5 hours</option>
+      <option value="6">6 hours</option>
+      <option value="7">7 hours</option>
+      <option value="8">8 hours</option>
+      <option value="9">9 hours</option>
+      <option value="10">10 hours</option>
+      <option value="11">11 hours</option>
+      <option value="12">12 hours</option>
+      <option value="0">Whatever is left over</option>>
+    </select>
+  <h3>How much sleep do you want?</h3>
+    <label for="sleep">Select:</label>
+    <select name="sleep" id="sleep">
+      <option value="1">1 hour</option>
+      <option value="2">2 hours</option>
+      <option value="3">3 hours</option>
+      <option value="4">4 hours</option>
+      <option value="5">5 hours</option>
+      <option value="6">6 hours</option>
+      <option value="7">7 hours</option>
+      <option value="8">8 hours</option>
+      <option value="0">Whatever is left over</option>
+    </select>
+    
+  
+
+<table id="myTable" border="1"> 
+</table><form> 
+<input type="button" onclick="createTable()" value="Create the table"> 
+</form>
+    
+<p id="output">
+</p>
+    <table >
+      <thead>
+        <tr>
+          <td></td>
+          <td>Monday</td>
+          <td>Tuesday</td>
+          <td>Wednesday</td>
+          <td>Thursday</td>
+          <td>Friday</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12:00 AM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1:00 AM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2:00 AM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3:00 AM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>4:00 AM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>5:00 AM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>6:00 AM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>7:00 AM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>8:00 AM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9:00 AM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10:00 AM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11:00 AM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>12:00 PM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1:00 PM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2:00 PM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3:00 PM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>4:00 PM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>5:00 PM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>6:00 PM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>7:00 PM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>8:00 PM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9:00 PM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10:00 PM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11:00 PM</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
